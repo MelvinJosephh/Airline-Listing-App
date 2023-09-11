@@ -4,12 +4,11 @@ import Modal from './components/Modal';
 
 function App() {
    const [modal, setModal] = useState(false);
-   const [modalInfo, setModalInfo] = useState('Modal data');
+   const [modalInfo, setModalInfo] = useState(null);
    const [airlines, setAirlines] = useState([])
 
    const openModal = (info) => {
       setModalInfo(info)
-      console.log(modalInfo);
       setModal(!modal)
    }
 

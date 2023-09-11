@@ -2,18 +2,18 @@ import React from 'react'
 
 const Modal = ({ displayModal, modalInfo, closeModal }) => {
 
-    const {name, country, head_quaters, logo, slogan, website,established } = modalInfo;
+    // const {name, country, head_quaters, logo, slogan, website,established } = modalInfo;
 
     const displayInfo = () => {
         return (
             <div className="modal-info">
-                <img className='airline-logo' src={logo}  alt='Airline Logo'/>
-                <p><b>Airline:</b> {name}</p>
-                <p><b>Country:</b> {country}</p>
-                <p><b>HQ:</b> {head_quaters}</p>
-                <p><b>Airline Slogan:</b> {slogan}</p>
-                <p><b>Website:</b> {website}</p>
-                <p><b>Established:</b> {established}</p>
+                <img className='airline-logo' src={modalInfo?.logo}  alt='Airline Logo'/>
+                <p><b>Airline:</b> {modalInfo?.name}</p>
+                <p><b>Country:</b> {modalInfo?.country}</p>
+                <p><b>HQ:</b> {modalInfo?.head_quaters}</p>
+                <p><b>Airline Slogan:</b> {modalInfo?.slogan}</p>
+                <p><b>Website:</b> {modalInfo?.website}</p>
+                <p><b>Established:</b> {modalInfo?.established}</p>
 
             </div>
         )
