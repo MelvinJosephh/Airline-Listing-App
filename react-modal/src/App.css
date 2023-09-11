@@ -1,0 +1,188 @@
+body {
+    background-color: #5c0931;
+    background-image: linear-gradient(to right, #5c0931, white)
+}
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(8px + 2vmin);
+    color: #5c0931;
+} 
+/* List content styling */
+.list_header {
+text-align: center;
+font-size: calc(12px + 4vmin);
+font-weight: 700;
+border-bottom: 1px solid black;
+}
+/* MODAL */
+.modal {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding-top: 100px;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    width: 75%;
+    max-width: 640px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+.modal-info {
+    text-align: left;
+}
+.modal-info img {
+    margin:auto;
+    display: block;
+    width: 25%;
+}
+
+/* Close button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-button {
+    background-color:#5c0931;
+    color:#ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+  }
+
+/* List table styling */
+
+table{
+    width: 65%;
+    margin: 50px auto; 
+}
+th{
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+tr{
+    cursor: pointer;  
+}
+tr:nth-child(odd) {
+    background-color: #e6dade;
+ }
+ tr:nth-child(even) {
+    background-color: #ffffff;
+ }
+
+td {
+    padding: 10px;
+}
+.airline_logo {
+    display: block;
+    margin: 10px auto;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #4f4a4c;
+        background-image: linear-gradient(to right, #4f4a4c, white)
+    }
+    .App {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(6px + 1.5vmin);
+        color: #5c0931;
+    } 
+    .modal-info img {
+        margin:auto;
+        display: block;
+        width: 30%;
+    }
+    .modal-content {
+        background-color: white;
+        width: 75%;
+        max-width: 640px;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+/* Table styling */
+table{
+    width: 80%;
+    margin: 50px auto; 
+}
+
+/* List content styling */
+.list_header {
+    text-align: center;
+    font-size: calc(10px + 1.5vmin);
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    }
+
+  }
+  @media (min-width:600px) and (max-width:780px) {
+    body {
+        background-color: #5c0931;
+        background-image: linear-gradient(to right, white, #5c0931)
+    }
+    .App {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(8px + 1.5vmin);
+        color: #5c0931;
+    } 
+    .modal-info img {
+        margin:auto;
+        display: block;
+        width: 25%;
+    }
+/* Table styling */
+table{
+    width: 80%;
+    margin: 50px auto; 
+}
+
+/* List content styling */
+.list_header {
+    text-align: center;
+    font-size: calc(12px + 2.5vmin);
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    }
+
+  }
